@@ -2,6 +2,8 @@
 
 Zbudowałem aplikację webową do wspólnego prowadzenia listy zakupów — coś w stylu narzędzia dla domowników albo współlokatorów, żeby nie trzeba było pytać "czy mleko już jest na liście?".
 
+URL: https://incomparable-blini-616f96.netlify.app/
+
 ## Co robi?
 
 Każdy zakłada własne konto z hasłem (bezpiecznie szyfrowanym, nigdy nie trzymanym jawnym tekstem). Po zalogowaniu tworzę listę i mogę zaprosić kogoś do niej jednorazowym kodem — druga osoba loguje się na swoje konto, wpisuje kod i od tej pory widzimy tę samą listę na żywo. Jak ja dodam mleko na telefonie, u niej pojawia się od razu, bez odświeżania.
