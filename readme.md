@@ -2,7 +2,7 @@
 
 Zbudowałem aplikację webową do wspólnego prowadzenia listy zakupów — coś w stylu narzędzia dla domowników albo współlokatorów, żeby nie trzeba było pytać "czy mleko już jest na liście?".
 
-URL: https://incomparable-blini-616f96.netlify.app/
+LINK DO APLIKACJI: https://incomparable-blini-616f96.netlify.app/
 
 ## Co robi?
 
