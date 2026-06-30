@@ -1,8 +1,8 @@
-# 🛒 Lista Zakupów — aplikacja, którą stworzyłem
+# 🛒 Lista Zakupów — aplikacja
 
 Zbudowałem aplikację webową do wspólnego prowadzenia listy zakupów — coś w stylu narzędzia dla domowników albo współlokatorów, żeby nie trzeba było pytać "czy mleko już jest na liście?".
 
-## Co umie
+## Co robi?
 
 Każdy zakłada własne konto z hasłem (bezpiecznie szyfrowanym, nigdy nie trzymanym jawnym tekstem). Po zalogowaniu tworzę listę i mogę zaprosić kogoś do niej jednorazowym kodem — druga osoba loguje się na swoje konto, wpisuje kod i od tej pory widzimy tę samą listę na żywo. Jak ja dodam mleko na telefonie, u niej pojawia się od razu, bez odświeżania.
 
@@ -34,12 +34,12 @@ A na koniec dodałem coś, z czego jestem najbardziej zadowolony: zakładkę **M
 - **TensorFlow.js** — trenowanie i inferencja sieci neuronowej lokalnie w przeglądarce, bez wysyłania danych na zewnątrz
 
 ## Architektura
-┌─────────────┐         ┌──────────────────┐
-│   Frontend   │ ──────▶ │  Supabase Auth    │  logowanie / rejestracja
-│ (HTML/CSS/JS)│         ├──────────────────┤
-│   Netlify    │ ──────▶ │  PostgreSQL + RLS │  listy, produkty, zaproszenia
-│              │         ├──────────────────┤
-│              │ ◀─────▶ │  Realtime (WS)    │  synchronizacja na żywo
+┌─────────────┐         ┌──────────────────┐ 
+│   Frontend   │ ──────▶ │  Supabase Auth    │  logowanie / rejestracja 
+│ (HTML/CSS/JS)│         ├──────────────────┤ 
+│   Netlify    │ ──────▶ │  PostgreSQL + RLS │  listy, produkty, zaproszenia 
+│              │         ├──────────────────┤ 
+│              │ ◀─────▶ │  Realtime (WS)    │  synchronizacja na żywo 
 └─────────────┘         └──────────────────┘
 │
 ▼
