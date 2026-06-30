@@ -56,5 +56,5 @@ A na koniec dodałem coś, z czego jestem najbardziej zadowolony: zakładkę **M
 Najwięcej czasu zajęło dopracowanie reguł bezpieczeństwa w bazie — trzeba było rozpisać precyzyjnie, kto może co widzieć i edytować (właściciel listy, zaproszony współużytkownik, ktoś z zewnątrz), i upewnić się, że te reguły nie gryzą się ze sobą przy takich operacjach jak dołączanie do listy przez kod zaproszenia.
 
 ## Autor: Patryk Hanneman 60594
-Uniwersytet Merito w Bydgoszczy
+Uniwersytet Merito w Bydgoszczy || 
 Promotor: Cezary Graul
