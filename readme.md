@@ -34,19 +34,20 @@ A na koniec dodałem coś, z czego jestem najbardziej zadowolony: zakładkę **M
 - **TensorFlow.js** — trenowanie i inferencja sieci neuronowej lokalnie w przeglądarce, bez wysyłania danych na zewnątrz
 
 ## Architektura
-┌─────────────┐         ┌──────────────────┐ 
-│   Frontend   │ ──────▶ │  Supabase Auth    │  logowanie / rejestracja 
-│ (HTML/CSS/JS)│         ├──────────────────┤ 
-│   Netlify    │ ──────▶ │  PostgreSQL + RLS │  listy, produkty, zaproszenia 
-│              │         ├──────────────────┤ 
-│              │ ◀─────▶ │  Realtime (WS)    │  synchronizacja na żywo 
-└─────────────┘         └──────────────────┘
+'''
+┌─────────────┐            ┌──────────────────┐ 
+│   Frontend   │ ──────▶  │  Supabase Auth    │  logowanie / rejestracja 
+│ (HTML/CSS/JS)│           ├──────────────────┤ 
+│   Netlify    │ ──────▶  │  PostgreSQL + RLS │  listy, produkty, zaproszenia 
+│              │           ├──────────────────┤ 
+│              │ ◀─────▶  │  Realtime (WS)   │  synchronizacja na żywo 
+└─────────────┘            └──────────────────┘
 │
 ▼
-┌─────────────┐
+┌──────────────┐
 │ TensorFlow.js│  trening i predykcja lokalnie
-└─────────────┘
-
+└──────────────┘
+'''
 ## Co było ciekawe w budowaniu tego
 
 Najwięcej czasu zajęło dopracowanie reguł bezpieczeństwa w bazie — trzeba było rozpisać precyzyjnie, kto może co widzieć i edytować (właściciel listy, zaproszony współużytkownik, ktoś z zewnątrz), i upewnić się, że te reguły nie gryzą się ze sobą przy takich operacjach jak dołączanie do listy przez kod zaproszenia.
