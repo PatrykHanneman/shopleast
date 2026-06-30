@@ -37,16 +37,16 @@ A na koniec dodałem coś, z czego jestem najbardziej zadowolony: zakładkę **M
 
 ```text
 ┌─────────────────────┐      ┌─────────────────────┐
-│ Frontend            │ ───► │ Supabase Auth      │ logowanie / rejestracja
+│ Frontend            │ ───► │ Supabase Auth       │ logowanie / rejestracja
 │ HTML/CSS/JS         │      ├─────────────────────┤
-│ Netlify             │ ───► │ PostgreSQL + RLS   │ listy, produkty, zaproszenia
+│ Netlify             │ ───► │ PostgreSQL + RLS    │ listy, produkty, zaproszenia
 └─────────────────────┘ ◄──► ├─────────────────────┤
-                             │ Realtime (WS)      │ synchronizacja na żywo
+                             │ Realtime (WS)       │ synchronizacja na żywo
                              └─────────────────────┘
                                        │
                                        ▼
                               ┌─────────────────────┐
-                              │ TensorFlow.js      │ trening i predykcja lokalnie
+                              │ TensorFlow.js       │ trening i predykcja lokalnie
                               └─────────────────────┘
 ```
 ## Co było ciekawe w budowaniu tego
